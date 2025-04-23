@@ -29,10 +29,20 @@ else:
     print("Verbesserungsbedarf")
 
 
-# For-Schleife``
+# For-Schleife`
 
 for x in ["a","b","c"]:
     print(x)
 for y in range(5):
     print(y)
+
+
+# While-Schleifes
+
+alter =18
+while alter <=35:
+    alter+=1
+    if alter == 21:
+        break
+    print(alter)
 

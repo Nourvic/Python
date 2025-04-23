@@ -1,5 +1,6 @@
 name:str
 gewicht : float
+isaThing:True
 alter : int = 25
 
 if alter ==25:
