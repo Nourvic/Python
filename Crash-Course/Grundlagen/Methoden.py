@@ -10,3 +10,8 @@ def begrüße(name: str, formell: bool = False):
         print(f"Hallo {name}, wie geht es Ihnen?")
     else:
         print(f"Hallo {name}, wie geht's?")
+
+
+# mann kan auch False weglassen, weil es schon als Standardwert in der Funktion gesetzt wurde
+begrüße("Nour",True)
+begrüße("Nour",False)
