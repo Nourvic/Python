@@ -7,6 +7,16 @@ print(res)
 
 # in Zahlen umwandeln => float oder int 
 num3 = input("enter thired num : ")
+op = input("enter the operator ")
 num4 = input("enter fourth num : ")
-res2 = float(num3)+float(num4)
-print(res2)
+
+if op == "+":
+    print(int(num3)+int(num4))
+elif op == "-":
+    print(int(num3)-int(num4))
+elif op == "/":
+    print(int(num3)/int(num4))
+elif op == "*":
+    print(int(num3)*int(num4))
+else:
+    print("wrong operator")
