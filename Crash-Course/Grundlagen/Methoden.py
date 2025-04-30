@@ -15,3 +15,9 @@ def begrüße(name: str, formell: bool = False):
 # mann kan auch False weglassen, weil es schon als Standardwert in der Funktion gesetzt wurde
 begrüße("Nour",True)
 begrüße("Nour",False)
+
+text = "CodeKING"
+print(text.replace("Code","MODE"))
+
+my_num = 7
+print(str(my_num)+ " favorite number")
