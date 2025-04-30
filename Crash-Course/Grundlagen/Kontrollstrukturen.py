@@ -46,3 +46,36 @@ while alter <=35:
         break
     print(alter)
 
+# examples
+
+friends = [1,"Training",True,False,[1,"Nour"]]
+print(friends)
+print(friends[0])
+print(friends[4])
+
+friends2 = ["Studium","Ausbildung","Duales-Studium","Werkstudium"]
+print(friends2[-1])
+print(friends2[-4])
+print(friends2[1:3]) # von index 1 bis 3, aber 3 wird nicht selektieret 
+print(friends2[1:])  # von index 1 bis letzte Element
+
+friends+=friends2
+print(friends)
+
+friends3 = friends2
+friends3.append(False)
+friends3.append([True,7])
+friends3.insert(0,"Yuhooo")
+print(friends3)
+what_was_popped = friends3.pop()
+print(what_was_popped)
+
+friends4 = ["Programming","JAVA","TypeScript","Python"]
+print(friends4.index("Python")) #liefert Platznummer von der Liste zurueck
+# print(friends4.index("JavaScript")) # ist nicht in der Liste enthalten
+friends4.append("JAVA")
+anz =friends4.count("JAVA")
+print(anz)
+friends4.pop()
+friends4.sort()
+print(friends4)
