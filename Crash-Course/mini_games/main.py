@@ -27,6 +27,21 @@ kern =[screen_height//2,screen_width//2]
 
 # 
 window.addch(kern[0],kern[1],curses.ACS_DIAMOND)
+
+key = curses.KEY_RIGHT
+
+while True:
+    next_key = window.getch()
+    key= key if next_key == -1 else next_key
+   """"
+    if next_key == -1:
+        key =key
+    else:
+        key = next_key
+   """"
+   if snake[0][0] in [0,screen_height]
+   
+
 window.refresh()  # Bildschirm aktualisieren
 window.addstr(5, 10, "Hallo, das Fenster funktioniert!")  # Text anzeigen
 
