@@ -9,12 +9,24 @@ screen_height, screen_width = screen.getmaxyx()
 # Neues Fenster
 window = curses.newwin(screen_height, screen_width, 0, 0)
 window.keypad(1) # window erhaelt ein Input von der Tastatur
-window.timeout(100) #delay in ms -> 100ms = 1 s
-snk-x = screen_width /4
-snk-y = screen_height /2 
+window.timeout(100) #delay in ms -> 1000ms = 1 s
+#x und y Koordinate fuer den Kopf des Snakes
+snk-x = screen_width /4 #500 //4 --> 125
+snk-y = screen_height /2 #600 //2 -->300
 
+#defenieren des Snakes
+snake = [
+    [snk-y,snk-x],
+    [snk-y,snk-x-1]
+    [snk-y,snk-x-2]
+]
 
+# defenieren eines Kerns
+kern =[screen_height//2,screen_width//2]
+#      [600//2,          400//2] ---> kern[300,200]
 
+# 
+window.addch(kern[0],kern[1],curses.ACS_DIAMOND)
 window.refresh()  # Bildschirm aktualisieren
 window.addstr(5, 10, "Hallo, das Fenster funktioniert!")  # Text anzeigen
 
