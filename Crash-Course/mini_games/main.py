@@ -75,15 +75,5 @@ if snake[0] ==kern:
 else:
     tail=snake.pop()
     window.addch(tail[0],tail[1],' ')
- 
 
-
-
-window.refresh()  # Bildschirm aktualisieren
-window.addstr(5, 10, "Hallo, das Fenster funktioniert!")  # Text anzeigen
-
-# Auf Tastendruck warten, damit das Programm nicht sofort schliesst
-window.getch()
-
-# Beenden
-curses.endwin()
+window.addch(snake[0][0],snake[0][1],curses.ASC_CKBOARD)
