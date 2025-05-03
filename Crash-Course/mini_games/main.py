@@ -45,8 +45,7 @@ while True:
  #  else:
  #     key = next_key
  
- if snake[0][0] in [0,screen_height] or snake[0][1] in [0][screen_width] or 
- snake[0] in sanke[1:]:
+ if snake[0][0] in [0,screen_height] or snake[0][1] in [0][screen_width] or snake[0] in sanke[1:]:
      curses.endwin() # Fenster schliessen
      quit() #Programm schliessen
 # Ausrichtugen der Schlange  befestigen
