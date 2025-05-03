@@ -49,11 +49,15 @@ while True:
  snake[0] in sanke[1:]:
      curses.endwin() # Fenster schliessen
      quit() #Programm schliessen
-    
+# Ausrichtugen der Schlange  befestigen
  new_head = [snake[0][0],snake[0][1]]
 if key == curses.KEY_DOWN:
     new_head[0] +=1
 if key == curses.KEY_UP:
+    new_head[0] -=1
+if key == curses.KEY_RIGHT:
+    new_head[0] +=1
+if key == curses.KEY_LEFT:
     new_head[0] -=1
    
 
