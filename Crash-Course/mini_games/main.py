@@ -59,7 +59,25 @@ if key == curses.KEY_RIGHT:
     new_head[0] +=1
 if key == curses.KEY_LEFT:
     new_head[0] -=1
-   
+   # new Head in snake[0,0] und snake[0,1] einsetzen
+   snake.insert(0,new_head)
+# Ueberpruefen ob die futter gegessen wird 
+if snake[0] ==kern:
+    kern = None
+# generieren eines neuen Kerns
+    while kern is None:
+      new_kern =[
+          random.randint(1,screen_height-1),#von 1 bis 599
+          random.randint(1,screen_width-1)
+      ]
+      kern = new_kern if new_kern not in snake else None
+    window.addch(kern[0],kern[1],curses.ACS_DIAMOND) 
+else:
+    tail=snake.pop()
+    window.addch(tail[0],tail[1],' ')
+ 
+
+
 
 window.refresh()  # Bildschirm aktualisieren
 window.addstr(5, 10, "Hallo, das Fenster funktioniert!")  # Text anzeigen
