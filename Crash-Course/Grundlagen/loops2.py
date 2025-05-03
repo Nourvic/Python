@@ -24,3 +24,12 @@ for buddy2 in character:
         break
     else:
         print(buddy2,"& Liu King are MK")
+        
+numbers = [4,3,1,2,6,7,8,9,2,1,4,2,3,4,5,1,2,4,6,7,9,5,3,1,6,8,1,2,4,0,0,0,]
+
+zahlen =[]
+for zahl in numbers:
+    if zahl not in zahlen:
+        zahlen.append(zahl)
+    
+print(zahlen)
