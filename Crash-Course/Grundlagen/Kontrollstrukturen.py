@@ -13,7 +13,7 @@ x:int=0
 while alter <35:
     alter+=1
     x+=1
-print(" Wert  von X ist : ",x)
+print("Wert  von X ist : ",x)
 
 
 # IF - Statements
